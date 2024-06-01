@@ -1,0 +1,149 @@
+* {
+  color: rgba(245, 17, 17, 0.8);
+  text-align: center;
+}
+
+body {
+  background-color: #13121a;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+.header-tittle {
+  margin-top: 2rem;
+}
+
+.header-image {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  width: 25rem;
+  border-radius: 2rem;
+  box-shadow: 10px 5px 15px rgba(206, 53, 53, 0.5);
+}
+
+.menu {
+  color: #143c8c;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.menu li a {
+  font-size: 2rem;
+  text-decoration: none;
+  margin: 2rem;
+}
+
+.menu li a:hover {
+  color: #14488c;
+}
+
+.peliculas {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.pelicula {
+  margin: 0.5rem;
+}
+
+.pelicula img {
+  width: 80%;
+  height: auto;
+  display: block;
+  border-radius: 0.5rem;
+}
+
+.tituloPelicula {
+  display: none;
+}
+
+/* Modificaciones para el carrusel de películas aclamadas */
+.carousel-inner {
+  display: flex;
+  flex-wrap: wrap; /* Envuelve los elementos a la siguiente línea */
+  justify-content: center; /* Centra horizontalmente los elementos */
+}
+
+.carousel-inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem; /* Espacio entre las películas */
+}
+
+.carousel-item {
+  flex: 0 0 100%; /* Ancho fijo para que haya 8 elementos por fila */
+  display: flex;
+  justify-content: center; /* Centra horizontalmente los elementos */
+  align-items: center; /* Centra verticalmente los elementos */
+}
+
+.peliculaItem {
+  width: 90%; /* Ancho del elemento */
+  margin: 0.5rem; /* Margen entre los elementos */
+}
+
+.imgAclamada {
+  width: 100%; /* Ancho del 100% */
+  height: auto; /* Altura automática */
+  border-radius: 0.5rem;
+}
+
+.carousel-item {
+  flex: 0 0 50%; /* Ancho 100% para mostrar una película por fila */
+}
+
+@media screen and (max-width: 800px) {
+  .header-image {
+    width: 15rem;
+  }
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  .menu li a {
+    font-size: 1.2rem;
+  }
+  .peliculas {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .carousel-item {
+    flex: 0 0 50%;
+  }
+}
+
+hr {
+  border: none;
+  height: 3px; /* Puedes ajustar el grosor aquí */
+  background-color: rgba(245, 17, 17, 0.8); /* Cambia el color aquí */
+  margin: 2rem 0; /* Ajusta el margen superior e inferior */
+}
+
+/* estilos para detalle */
+.imgDetalle {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin-bottom: 1rem;
+}
+
+.detail-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.detail-content h2 {
+  margin: 1rem 0;
+}
+
+.detail-content p {
+  text-align: justify;
+  margin-bottom: 1rem;
+}

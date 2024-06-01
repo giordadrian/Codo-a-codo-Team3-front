@@ -1,0 +1,7 @@
+
+https://www.themoviedb.org/
+
+api key
+48ce139c4cb2aa984923f2e9fb1af959
+
+token: eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI0OGNlMTM5YzRjYjJhYTk4NDkyM2YyZTlmYjFhZjk1OSIsInN1YiI6IjY2NTdiMTViNjhkYTU1MzA2ZmJkMTdhYSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.bQ0ZIZSx1J2wahgF5xfY-4hjcL_XjVb2iTX15oiB0yk

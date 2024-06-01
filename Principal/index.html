@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Películas y Series</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./principal.css">
+  <style>
+    /* Estilos CSS personalizados */
+    .center-3d {
+      text-align: center;
+      margin-top: 50px;
+    }
+    .header-title {
+      font-size: 5rem; /* Tamaño más grande */
+      color: #333;
+    }
+    .header-subtitle {
+      color: red; /* Cambiar a rojo */
+      margin-bottom: 20px;
+      font-size: 2rem; /* Tamaño más grande */
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Efecto sombra */
+    }
+  </style>
+</head>
+<body>
+  <div class="center-3d" id="popupTrigger">
+    <h1 class="header-title">Movie Clone</h1>
+    <img class="img-fluid header-image" src="https://picsum.photos/id/250/800/400" alt="Movie Clone">
+    <h4 class="header-subtitle">Haz click y empieza a disfrutar del mejor contenido</h4>
+  </div>
+
+  <div class="container">
+    <header>
+      <nav>
+        <!-- Enlaces de navegación eliminados -->
+      </nav>
+      <button id="loginBtn" class="btn btn-primary">Iniciar sesión</button>
+      <!-- Botón de inicio agregado -->
+      <button id="inicioBtn" style="display: none;"></button>
+    </header>
+  </div>
+
+  <!-- Popup -->
+  <div id="registerPopup" class="popup" style="display: none;">
+    <div class="popup-content">
+      <span class="close-popup">&times;</span>
+      <h2>Registrarse</h2>
+      <form id="registerForm">
+        <div class="form-group">
+          <input type="text" class="form-control" id="nameInput" placeholder="Nombre" required>
+        </div>
+        <div class="form-group">
+          <input type="email" class="form-control" id="emailInput" placeholder="Correo electrónico" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+        </div>
+        <div class="form-group">
+          <input type="password" class="form-control" id="passwordInput" placeholder="Contraseña" required minlength="6">
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg btn-block">Registrarse</button>
+      </form>
+    </div>
+  </div>
+
+  <footer class="fixed-bottom bg-dark text-white text-center py-2">
+    <p>&copy; 2024 © Movie Clone Películas y Series</p>
+  </footer>
+
+  <!-- Bootstrap y JavaScript al final del documento para una carga más rápida -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
