@@ -111,7 +111,8 @@ document.getElementById('loginBtn').addEventListener('click', function(event) {
       // Redirigir a usuariologueado.html
      
 
-      window.location.href = '../usuario-logueado/usuarioLogueado.html';
+      window.location.href = '../Codo-a-codo-Team3-front/usuario-logueado/usuarioLogueado.html';
+      //window.location.href = '../usuario-logueado/usuarioLogueado.html';
 
 
 
